@@ -5,7 +5,7 @@ import HomePage from "./homepage";
 export default function Root(props) {
   return (
     <BrowserRouter>
-      <Route path="/home" component={HomePage} exact />
+      <Route path="/react-app-1" component={HomePage} exact />
     </BrowserRouter>
   );
 }
