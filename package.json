@@ -5,6 +5,7 @@
     "analyze": "webpack --mode=production --env.analyze=true",
     "lint": "eslint src",
     "prettier": "prettier --write './**'",
+    "push": "yarn build && scripts/push.sh",
     "test": "jest --passWithNoTests",
     "watch-tests": "jest --watch",
     "format": "prettier --write './**'",
