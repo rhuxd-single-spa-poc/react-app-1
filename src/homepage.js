@@ -5,7 +5,7 @@ export default function HomePage(props) {
 
   return (
     <div className="home-page-container">
-      <h1>React app 1</h1>
+      <h1>DEMO</h1>
       <div>This is the first react app.</div>
     </div>
   );
