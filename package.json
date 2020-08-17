@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "start": "webpack-dev-server",
+    "start": "node server.js",
+    "start-dev": "webpack-dev-server",
     "build": "webpack --mode=production",
     "analyze": "webpack --mode=production --env.analyze=true",
     "lint": "eslint src",
@@ -9,7 +10,8 @@
     "test": "jest --passWithNoTests",
     "watch-tests": "jest --watch",
     "format": "prettier --write './**'",
-    "coverage": "jest --coverage"
+    "coverage": "jest --coverage",
+    "nodeshift": "nodeshift --knative=true --namespace.name=ddonahue"
   },
   "husky": {
     "hooks": {
@@ -27,17 +29,18 @@
     "autoprefixer": "^9.8.4",
     "babel-eslint": "^11.0.0-beta.2",
     "babel-jest": "^26.1.0",
-    "babel-loader": "^8.1.0",
     "concurrently": "^5.2.0",
     "css-loader": "^3.6.0",
     "eslint": "^7.3.1",
     "eslint-config-prettier": "^6.11.0",
     "eslint-config-react-important-stuff": "^2.0.0",
     "eslint-plugin-prettier": "^3.1.4",
+    "express": "^4.17.1",
     "husky": "^4.2.5",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^26.1.0",
     "jest-cli": "^26.1.0",
+    "nodeshift": "^7.1.0",
     "prettier": "^2.0.5",
     "pretty-quick": "^2.0.1",
     "query-string": "^6.13.1",
